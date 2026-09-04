@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { ArrowRight, Check, RefreshCcw, ShieldCheck, Truck } from "lucide-react";
 import { Reveal, SectionHeading, Stagger, staggerChild } from "./motion-primitives";
 import { cn } from "../utils/cn";
