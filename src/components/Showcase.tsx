@@ -197,7 +197,7 @@ function ProductCard({ p, index }: { p: Product; index: number }) {
     >
       <div className="relative overflow-hidden rounded-[2rem] border border-ink/[0.07] bg-cream shadow-soft transition-shadow duration-500 group-hover:shadow-lift">
         {p.tag && (
-          <span className="absolute left-4 top-4 z-10 rounded-full bg-ink/85 px-3.5 py-1.5 text-[10px] font-bold uppercase tracking-[0.14em] text-white backdrop-blur">
+          <span className="absolute left-4 top-4 z-10 rounded-full bg-ink/85 px-3.5 py-1.5 text-[10px] font-bold uppercase tracking-[0.14em] text-white">
             {p.tag}
           </span>
         )}
@@ -216,7 +216,7 @@ function ProductCard({ p, index }: { p: Product; index: number }) {
           onClick={() => setAdded(true)}
           aria-label={`Add ${p.name} to cart`}
           className={cn(
-            "absolute bottom-4 right-4 grid size-12 place-items-center rounded-full shadow-lift backdrop-blur transition-all duration-400 active:scale-90",
+            "absolute bottom-4 right-4 grid size-12 place-items-center rounded-full shadow-lift transition-all duration-400 active:scale-90",
             "translate-y-16 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 focus-visible:translate-y-0 focus-visible:opacity-100",
             added ? "bg-leaf text-white" : "bg-white/90 text-ink hover:bg-ink hover:text-white"
           )}

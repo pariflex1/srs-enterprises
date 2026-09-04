@@ -184,7 +184,7 @@ export default function Features() {
             <motion.div
               key={q.title}
               variants={staggerChild}
-              className="group flex items-center gap-4 rounded-3xl border border-ink/[0.07] bg-white/60 px-6 py-5 backdrop-blur transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-soft"
+              className="group flex items-center gap-4 rounded-3xl border border-ink/[0.07] bg-white/80 px-6 py-5 transition-all duration-300 hover:-translate-y-1 hover:bg-white hover:shadow-soft"
             >
               <span className="grid size-11 shrink-0 place-items-center rounded-2xl bg-blush text-ember transition-transform duration-300 group-hover:scale-110">
                 <q.icon className="size-5" />

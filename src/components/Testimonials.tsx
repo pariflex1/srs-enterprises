@@ -56,7 +56,7 @@ const TESTIMONIALS = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="relative scroll-mt-24 py-24 sm:py-32">
+    <section id="testimonials" className="relative scroll-mt-24 overflow-hidden py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="Verified reviews"

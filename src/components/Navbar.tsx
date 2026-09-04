@@ -61,7 +61,7 @@ export default function Navbar() {
         className={cn(
           "fixed inset-x-0 top-0 z-[70] transition-all duration-500",
           scrolled
-            ? "border-b border-ink/[0.06] bg-porcelain/75 shadow-[0_8px_32px_-16px_rgb(24_20_16/0.15)] backdrop-blur-xl"
+            ? "border-b border-ink/[0.06] bg-porcelain/95 shadow-[0_8px_32px_-16px_rgb(24_20_16/0.15)]"
             : "bg-transparent"
         )}
       >
@@ -105,7 +105,7 @@ export default function Navbar() {
               onClick={() => setOpen((v) => !v)}
               aria-expanded={open}
               aria-label={open ? "Close menu" : "Open menu"}
-              className="grid size-10 place-items-center rounded-full border border-ink/10 bg-white/70 text-ink backdrop-blur lg:hidden"
+              className="grid size-10 place-items-center rounded-full border border-ink/10 bg-white text-ink lg:hidden"
             >
               {open ? <X className="size-5" /> : <Menu className="size-5" />}
             </button>
@@ -119,7 +119,7 @@ export default function Navbar() {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.45, ease: EASE }}
-              className="overflow-hidden border-b border-ink/[0.06] bg-porcelain/95 backdrop-blur-xl lg:hidden"
+              className="overflow-hidden border-b border-ink/[0.06] bg-porcelain/95 lg:hidden"
             >
               <ul className="space-y-1 px-6 py-6">
                 {LINKS.map((l, i) => (

@@ -56,7 +56,7 @@ export default function Benefits() {
               transition={{ duration: 0.9, delay: 0.35, ease: EASE }}
               className="absolute -bottom-8 left-4 right-4 sm:left-8 sm:right-auto sm:max-w-xs"
             >
-              <div className="rounded-3xl border border-white/15 bg-white/[0.08] p-5 shadow-lift backdrop-blur-xl">
+              <div className="rounded-3xl border border-white/15 bg-ink-2 p-5 shadow-lift">
                 <div className="flex items-center gap-2 text-apricot">
                   <Sparkles className="size-4" />
                   <p className="text-[10px] font-bold uppercase tracking-[0.22em]">Quality guaranteed</p>
@@ -75,7 +75,7 @@ export default function Benefits() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.5, ease: EASE }}
-              className="absolute -top-6 right-6 rounded-2xl border border-white/15 bg-ink/70 px-5 py-4 backdrop-blur-xl animate-float-slow"
+              className="absolute -top-6 right-6 rounded-2xl border border-white/15 bg-ink-2 px-5 py-4 animate-float-slow"
             >
               <p className="font-display text-3xl font-bold text-white">
                 <Counter to={98} suffix="%" />
@@ -108,7 +108,7 @@ export default function Benefits() {
               <motion.div
                 key={b.title}
                 variants={staggerChild}
-                className="group flex gap-5 rounded-3xl border border-white/[0.08] bg-white/[0.04] p-5 backdrop-blur transition-all duration-400 hover:border-ember/40 hover:bg-white/[0.07] sm:p-6"
+                className="group flex gap-5 rounded-3xl border border-white/[0.08] bg-white/[0.04] p-5 transition-all duration-400 hover:border-ember/40 hover:bg-white/[0.07] sm:p-6"
               >
                 <span className="grid size-11 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-ember/25 to-apricot/15 text-apricot transition-transform duration-300 group-hover:scale-110">
                   <b.icon className="size-5" />
