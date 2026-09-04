@@ -168,7 +168,7 @@ export function Eyebrow({
         "inline-flex items-center gap-2.5 rounded-full border px-4 py-1.5 text-[11px] font-semibold uppercase tracking-[0.18em]",
         dark
           ? "border-white/15 bg-white/5 text-apricot"
-          : "border-ink/10 bg-white/60 text-ember"
+          : "border-ink/10 bg-white text-ember"
       )}
     >
       <span className="relative flex size-1.5">

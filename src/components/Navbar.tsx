@@ -61,7 +61,7 @@ export default function Navbar() {
         className={cn(
           "fixed inset-x-0 top-0 z-[70] transition-all duration-500",
           scrolled
-            ? "border-b border-ink/[0.06] bg-porcelain/95 shadow-[0_8px_32px_-16px_rgb(24_20_16/0.15)]"
+            ? "border-b border-ink/[0.06] bg-porcelain shadow-[0_8px_32px_-16px_rgb(24_20_16/0.15)]"
             : "bg-transparent"
         )}
       >
@@ -119,7 +119,7 @@ export default function Navbar() {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.45, ease: EASE }}
-              className="overflow-hidden border-b border-ink/[0.06] bg-porcelain/95 lg:hidden"
+              className="overflow-hidden border-b border-ink/[0.06] bg-porcelain lg:hidden"
             >
               <ul className="space-y-1 px-6 py-6">
                 {LINKS.map((l, i) => (
