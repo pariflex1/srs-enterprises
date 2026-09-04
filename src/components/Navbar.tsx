@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   motion,
   useScroll,
@@ -11,16 +12,17 @@ import { cn } from "../utils/cn";
 import { EASE } from "./motion-primitives";
 
 const LINKS = [
-  { label: "Products", href: "#showcase" },
-  { label: "Why SRS", href: "#features" },
-  { label: "Reviews", href: "#testimonials" },
-  { label: "Bundles", href: "#pricing" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Products", href: "/#showcase" },
+  { label: "Why SRS", href: "/#features" },
+  { label: "Plans", href: "/plans" },
+  { label: "Reviews", href: "/#testimonials" },
+  { label: "Bundles", href: "/#pricing" },
+  { label: "FAQ", href: "/#faq" },
 ];
 
 export function Logo({ dark = false }: { dark?: boolean }) {
   return (
-    <a href="#top" className="group flex items-center gap-3" aria-label="SRS Enterprises home">
+    <Link to="/" className="group flex items-center gap-3" aria-label="SRS Enterprises home">
       <span className="grid size-10 place-items-center rounded-xl bg-gradient-to-br from-ember to-apricot font-display text-lg font-bold text-white shadow-ember transition-transform duration-500 group-hover:rotate-[8deg]">
         S
       </span>
@@ -32,7 +34,7 @@ export function Logo({ dark = false }: { dark?: boolean }) {
           Enterprises
         </span>
       </span>
-    </a>
+    </Link>
   );
 }
 
