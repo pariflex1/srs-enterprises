@@ -58,7 +58,7 @@ export default function Referral() {
                   {i < STEPS.length - 1 && (
                     <div aria-hidden className="absolute left-[calc(100%-0.5rem)] top-12 hidden w-8 border-t-2 border-dashed border-ember/30 md:block" />
                   )}
-                  <div className="group h-full rounded-[1.75rem] border border-ink/[0.07] bg-white/80 p-7 shadow-soft backdrop-blur transition-all duration-400 hover:-translate-y-1.5 hover:shadow-lift">
+                  <div className="group h-full rounded-[1.75rem] border border-ink/[0.07] bg-white p-7 shadow-soft transition-all duration-400 hover:-translate-y-1.5 hover:shadow-lift">
                     <div className="flex items-center justify-between">
                       <span className="grid size-12 place-items-center rounded-2xl bg-gradient-to-br from-ember to-apricot text-white shadow-ember transition-transform duration-300 group-hover:scale-110 group-hover:rotate-[-6deg]">
                         <s.icon className="size-5.5" />

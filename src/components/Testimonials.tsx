@@ -56,7 +56,7 @@ const TESTIMONIALS = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="relative scroll-mt-24 py-24 sm:py-32">
+    <section id="testimonials" className="relative scroll-mt-24 overflow-hidden py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-5 sm:px-8">
         <SectionHeading
           eyebrow="Verified reviews"
@@ -68,13 +68,13 @@ export default function Testimonials() {
           copy="Every review below is from a verified purchase, collected by an independent third party. We publish the tough ones too."
         />
 
-        <Stagger className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <Stagger className="mt-16 grid gap-5 overflow-hidden sm:grid-cols-2 lg:grid-cols-3 lg:py-4">
           {TESTIMONIALS.map((t, i) => (
             <motion.figure
               key={t.name}
               variants={staggerChild}
               className={cn(
-                "group flex flex-col rounded-[2rem] border border-ink/[0.07] bg-white p-8 shadow-soft transition-all duration-500 hover:-translate-y-1.5 hover:shadow-lift",
+                "group flex flex-col overflow-hidden rounded-[2rem] border border-ink/[0.07] bg-white p-8 shadow-soft transition-all duration-500 hover:-translate-y-1.5 hover:shadow-lift",
                 i === 1 && "lg:-translate-y-4",
                 i === 4 && "lg:translate-y-4"
               )}
@@ -84,7 +84,7 @@ export default function Testimonials() {
                   <Star key={s} className="size-4 fill-ember text-ember" />
                 ))}
               </div>
-              <blockquote className="mt-5 flex-1 text-[15px] leading-relaxed text-ink/80">
+              <blockquote className="mt-5 flex-1 overflow-hidden text-[15px] leading-relaxed text-ink/80 [overflow-wrap:anywhere]">
                 “{t.quote}”
               </blockquote>
               <figcaption className="mt-7 flex items-center gap-3 border-t border-ink/[0.06] pt-5">

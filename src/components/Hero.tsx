@@ -40,7 +40,7 @@ function GlassChip({
       <motion.div
         animate={reduce ? undefined : { y: [0, -10, 0] }}
         transition={{ duration, repeat: Infinity, ease: "easeInOut", delay }}
-        className="flex items-center gap-3 rounded-2xl border border-white/70 bg-white/65 px-4 py-3 shadow-lift backdrop-blur-xl"
+        className="flex items-center gap-3 rounded-2xl border border-ink/[0.07] bg-white px-4 py-3 shadow-lift"
       >
         {children}
       </motion.div>
@@ -69,8 +69,8 @@ export default function Hero() {
       {/* Ambient background */}
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <div className="bg-grid absolute inset-0 [mask-image:radial-gradient(75%_60%_at_50%_20%,black,transparent)]" />
-        <div className="absolute -top-40 right-[-10%] size-[640px] rounded-full bg-[radial-gradient(circle,rgb(232_85_31/0.16),transparent_65%)] blur-3xl animate-aurora" />
-        <div className="absolute top-1/3 left-[-12%] size-[480px] rounded-full bg-[radial-gradient(circle,rgb(255_178_94/0.18),transparent_65%)] blur-3xl animate-aurora [animation-delay:-6s]" />
+        <div className="absolute -top-40 right-[-10%] size-[640px] rounded-full bg-[radial-gradient(circle,rgb(232_85_31/0.16),transparent_65%)] blur-3xl" />
+        <div className="absolute top-1/3 left-[-12%] size-[480px] rounded-full bg-[radial-gradient(circle,rgb(255_178_94/0.18),transparent_65%)] blur-3xl" />
       </div>
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-5 sm:px-8 lg:grid-cols-[1.05fr_0.95fr] lg:gap-8">
@@ -79,7 +79,7 @@ export default function Hero() {
           <motion.div variants={item}>
             <a
               href="#showcase"
-              className="group inline-flex items-center gap-2.5 rounded-full border border-ink/10 bg-white/70 py-1.5 pl-1.5 pr-4 text-xs font-semibold text-smoke shadow-soft backdrop-blur transition-colors hover:border-ember/30 hover:text-ink"
+              className="group inline-flex items-center gap-2.5 rounded-full border border-ink/10 bg-white py-1.5 pl-1.5 pr-4 text-xs font-semibold text-smoke shadow-soft transition-colors hover:border-ember/30 hover:text-ink"
             >
               <span className="inline-flex items-center gap-1.5 rounded-full bg-ink px-3 py-1 text-[10px] font-bold uppercase tracking-[0.14em] text-white">
                 <Award className="size-3 text-apricot" /> Best Seller
@@ -120,7 +120,7 @@ export default function Hero() {
             </Magnet>
             <a
               href="#referral"
-              className="group inline-flex items-center gap-2.5 rounded-full border border-ink/12 bg-white/60 px-7 py-4 text-base font-semibold text-ink backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-ember/40 hover:shadow-lift"
+              className="group inline-flex items-center gap-2.5 rounded-full border border-ink/12 bg-white px-7 py-4 text-base font-semibold text-ink transition-all duration-300 hover:-translate-y-0.5 hover:border-ember/40 hover:shadow-lift"
             >
               <Gift className="size-4.5 text-ember transition-transform duration-300 group-hover:-rotate-12" />
               Refer &amp; earn $25
@@ -167,16 +167,16 @@ export default function Hero() {
             <div aria-hidden className="absolute inset-[-8%] rounded-full border border-dashed border-ember/25 spin-badge [animation-duration:36s]" />
             <div aria-hidden className="absolute inset-[-2%] rounded-full border border-ink/[0.07]" />
 
-            <div className="relative overflow-hidden rounded-[2.75rem] border border-white/70 shadow-lift">
+            <div className="relative overflow-hidden rounded-[2.75rem] border border-ink/[0.07] shadow-lift">
               <img
                 src="/images/Products/Digital RO.png"
                 alt="Digital RO Water Purification System"
-                className="aspect-[4/5] w-full object-cover"
+                className="aspect-square w-full bg-cream object-contain p-8"
                 loading="eager"
               />
               <div aria-hidden className="absolute inset-0 bg-gradient-to-t from-ink/[0.12] via-transparent to-transparent" />
               {/* Price chip */}
-              <div className="absolute bottom-5 left-5 flex items-center gap-3 rounded-2xl border border-white/40 bg-ink/55 px-4 py-3 text-white backdrop-blur-xl">
+              <div className="absolute bottom-5 left-5 flex items-center gap-3 rounded-2xl border border-ink bg-ink px-4 py-3 text-white">
                 <div>
                   <p className="text-[10px] font-semibold uppercase tracking-[0.2em] text-white/60">Digital RO</p>
                   <p className="font-display text-lg font-bold leading-tight">

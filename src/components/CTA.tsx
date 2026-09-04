@@ -16,8 +16,8 @@ export default function CTA() {
             {/* Ambient */}
             <div aria-hidden className="pointer-events-none absolute inset-0">
               <div className="bg-grid-dark absolute inset-0 opacity-60 [mask-image:radial-gradient(70%_80%_at_50%_50%,black,transparent)]" />
-              <div className="absolute -left-24 -top-24 size-96 rounded-full bg-[radial-gradient(circle,rgb(232_85_31/0.35),transparent_65%)] blur-3xl animate-aurora" />
-              <div className="absolute -bottom-28 -right-16 size-96 rounded-full bg-[radial-gradient(circle,rgb(255_178_94/0.25),transparent_65%)] blur-3xl animate-aurora [animation-delay:-7s]" />
+              <div className="absolute -left-24 -top-24 size-96 rounded-full bg-[radial-gradient(circle,rgb(232_85_31/0.35),transparent_65%)] blur-3xl" />
+              <div className="absolute -bottom-28 -right-16 size-96 rounded-full bg-[radial-gradient(circle,rgb(255_178_94/0.25),transparent_65%)] blur-3xl" />
               <div className="absolute left-1/2 top-1/2 size-[560px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/[0.07]" />
               <div className="absolute left-1/2 top-1/2 size-[840px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/[0.05]" />
             </div>
@@ -51,7 +51,7 @@ export default function CTA() {
                   </Magnet>
                   <a
                     href="#referral"
-                    className="group inline-flex items-center gap-2.5 rounded-full border border-white/20 bg-white/[0.06] px-8 py-4.5 text-base font-semibold text-white backdrop-blur transition-all duration-300 hover:-translate-y-0.5 hover:border-white/40 hover:bg-white/10"
+                    className="group inline-flex items-center gap-2.5 rounded-full border border-white/20 bg-white/[0.06] px-8 py-4.5 text-base font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white/40 hover:bg-white/10"
                   >
                     <Gift className="size-4.5 text-apricot transition-transform duration-300 group-hover:-rotate-12" />
                     Refer &amp; earn $25

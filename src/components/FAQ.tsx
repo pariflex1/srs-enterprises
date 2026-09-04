@@ -36,7 +36,7 @@ function Item({ q, a, open, onToggle }: { q: string; a: string; open: boolean; o
     <div
       className={cn(
         "overflow-hidden rounded-3xl border transition-all duration-400",
-        open ? "border-ember/25 bg-white shadow-soft" : "border-ink/[0.08] bg-white/60 hover:bg-white"
+        open ? "border-ember/25 bg-white shadow-soft" : "border-ink/[0.08] bg-white hover:bg-white"
       )}
     >
       <button
