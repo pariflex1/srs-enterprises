@@ -93,9 +93,9 @@ export default function Hero() {
             variants={item}
             className="mt-7 font-display text-[2.85rem] font-semibold leading-[1.02] tracking-[-0.035em] text-ink sm:text-6xl lg:text-[4.6rem]"
           >
-            Clean water,{" "}
+            Smart electronics,{" "}
             <span className="relative inline-block font-accent font-normal italic tracking-normal text-transparent [background:linear-gradient(100deg,#e8551f,#ffb25e)] bg-clip-text">
-              pure living.
+              radiant beauty.
             </span>
           </motion.h1>
 
@@ -103,8 +103,8 @@ export default function Hero() {
             variants={item}
             className="mt-6 max-w-xl text-lg leading-relaxed text-smoke"
           >
-            SRS Enterprises provides premium water purification, home appliances,
-            and solar solutions — engineered for quality and built to last.
+            SRS Enterprises brings you trusted electronics and premium cosmetics —
+            quality products you can rely on, every day.
           </motion.p>
 
           <motion.div variants={item} className="mt-9 flex flex-wrap items-center gap-4">
