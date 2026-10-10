@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, Check, Plus, Star } from "lucide-react";
 import { EASE, Reveal, SectionHeading } from "./motion-primitives";
 import { cn } from "../utils/cn";
+import { asset } from "../utils/asset";
 
 type Category = "All" | "Water Purifier" | "RO System" | "Appliance" | "Solar" | "Kitchen";
 
@@ -27,7 +28,7 @@ const PRODUCTS: Product[] = [
     rating: 4.8,
     reviews: "1,240",
     tag: "Popular",
-    img: "/images/Products/Water Purifier.png",
+    img: asset("/images/Products/Water Purifier.png"),
     alt: "Water Purifier",
   },
   {
@@ -37,7 +38,7 @@ const PRODUCTS: Product[] = [
     rating: 4.9,
     reviews: "890",
     tag: "Premium",
-    img: "/images/Products/Kangen Alkaline Water Ionizer.png",
+    img: asset("/images/Products/Kangen Alkaline Water Ionizer.png"),
     alt: "Kangen Alkaline Water Ionizer",
   },
   {
@@ -46,7 +47,7 @@ const PRODUCTS: Product[] = [
     category: "Water Purifier",
     rating: 4.7,
     reviews: "654",
-    img: "/images/Products/Ionizer.png",
+    img: asset("/images/Products/Ionizer.png"),
     alt: "Ionizer",
   },
   {
@@ -55,7 +56,7 @@ const PRODUCTS: Product[] = [
     category: "Water Purifier",
     rating: 4.6,
     reviews: "780",
-    img: "/images/Products/Water Dispenser.png",
+    img: asset("/images/Products/Water Dispenser.png"),
     alt: "Water Dispenser",
   },
   {
@@ -64,7 +65,7 @@ const PRODUCTS: Product[] = [
     category: "Water Purifier",
     rating: 4.5,
     reviews: "432",
-    img: "/images/Products/Water Conditioner.png",
+    img: asset("/images/Products/Water Conditioner.png"),
     alt: "Water Conditioner",
   },
   {
@@ -74,7 +75,7 @@ const PRODUCTS: Product[] = [
     rating: 4.8,
     reviews: "1,100",
     tag: "Best seller",
-    img: "/images/Products/Digital RO.png",
+    img: asset("/images/Products/Digital RO.png"),
     alt: "Digital RO System",
   },
   {
@@ -83,7 +84,7 @@ const PRODUCTS: Product[] = [
     category: "RO System",
     rating: 4.7,
     reviews: "876",
-    img: "/images/Products/Aqua Addition RO Black.png",
+    img: asset("/images/Products/Aqua Addition RO Black.png"),
     alt: "Aqua Addition RO Black",
   },
   {
@@ -92,7 +93,7 @@ const PRODUCTS: Product[] = [
     category: "RO System",
     rating: 4.7,
     reviews: "876",
-    img: "/images/Products/Aqua Addition RO White.png",
+    img: asset("/images/Products/Aqua Addition RO White.png"),
     alt: "Aqua Addition RO White",
   },
   {
@@ -102,7 +103,7 @@ const PRODUCTS: Product[] = [
     rating: 4.9,
     reviews: "320",
     tag: "Commercial",
-    img: "/images/Products/Commercial Reverse Osmosis System.png",
+    img: asset("/images/Products/Commercial Reverse Osmosis System.png"),
     alt: "Commercial Reverse Osmosis System",
   },
   {
@@ -111,7 +112,7 @@ const PRODUCTS: Product[] = [
     category: "RO System",
     rating: 4.6,
     reviews: "210",
-    img: "/images/Products/50 LPH Water Purifier.png",
+    img: asset("/images/Products/50 LPH Water Purifier.png"),
     alt: "50 LPH Water Purifier",
   },
   {
@@ -120,7 +121,7 @@ const PRODUCTS: Product[] = [
     category: "RO System",
     rating: 4.5,
     reviews: "180",
-    img: "/images/Products/150 LPH Cooler.png",
+    img: asset("/images/Products/150 LPH Cooler.png"),
     alt: "150 LPH Cooler",
   },
   {
@@ -130,7 +131,7 @@ const PRODUCTS: Product[] = [
     rating: 4.8,
     reviews: "2,340",
     tag: "New",
-    img: "/images/Products/Smart LED TV.png",
+    img: asset("/images/Products/Smart LED TV.png"),
     alt: "Smart LED TV",
   },
   {
@@ -139,7 +140,7 @@ const PRODUCTS: Product[] = [
     category: "Appliance",
     rating: 4.7,
     reviews: "1,560",
-    img: "/images/Products/Washing Machine.png",
+    img: asset("/images/Products/Washing Machine.png"),
     alt: "Washing Machine",
   },
   {
@@ -148,7 +149,7 @@ const PRODUCTS: Product[] = [
     category: "Appliance",
     rating: 4.6,
     reviews: "980",
-    img: "/images/Products/Geyser.png",
+    img: asset("/images/Products/Geyser.png"),
     alt: "Geyser",
   },
   {
@@ -157,7 +158,7 @@ const PRODUCTS: Product[] = [
     category: "Kitchen",
     rating: 4.5,
     reviews: "760",
-    img: "/images/Products/Mixer.png",
+    img: asset("/images/Products/Mixer.png"),
     alt: "Mixer",
   },
   {
@@ -167,7 +168,7 @@ const PRODUCTS: Product[] = [
     rating: 4.9,
     reviews: "420",
     tag: "Eco",
-    img: "/images/Products/Solar System.png",
+    img: asset("/images/Products/Solar System.png"),
     alt: "Solar System",
   },
   {
@@ -176,7 +177,7 @@ const PRODUCTS: Product[] = [
     category: "Water Purifier",
     rating: 4.4,
     reviews: "310",
-    img: "/images/Products/Indexn.png",
+    img: asset("/images/Products/Indexn.png"),
     alt: "Indexn Water System",
   },
 ];
@@ -241,9 +242,9 @@ function ProductCard({ p, index }: { p: Product; index: number }) {
           <p className="font-display text-xl font-bold text-ink">
             {p.price ? (
               <>
-                ${p.price}
+                ₹{p.price}
                 {p.compareAt && (
-                  <span className="ml-2 text-sm font-medium text-fog line-through">${p.compareAt}</span>
+                  <span className="ml-2 text-sm font-medium text-fog line-through">₹{p.compareAt}</span>
                 )}
               </>
             ) : (
@@ -255,7 +256,7 @@ function ProductCard({ p, index }: { p: Product; index: number }) {
             className={cn(
               "inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-bold transition-all duration-300",
               added
-                ? "bg-leaf/10 text-leaf"
+                ? "bg-leaf/10 text-ember"
                 : "bg-ink/[0.05] text-ink hover:bg-ink hover:text-white"
             )}
           >
@@ -280,7 +281,7 @@ export default function Showcase() {
   return (
     <section id="showcase" className="relative scroll-mt-24 py-24 sm:py-32">
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute right-[-15%] top-1/4 size-[560px] rounded-full bg-[radial-gradient(circle,rgb(255_178_94/0.14),transparent_65%)] blur-3xl" />
+        <div className="absolute right-[-15%] top-1/4 size-[560px] rounded-full bg-[radial-gradient(circle,rgb(77_155_255/0.14),transparent_65%)] blur-3xl" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">

@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Leaf, RefreshCcw, ShieldCheck, Sparkles, Timer } from "lucide-react";
 import { Counter, EASE, Eyebrow, Reveal, Stagger, staggerChild } from "./motion-primitives";
+import { asset } from "../utils/asset";
 
 const BENEFITS = [
   {
@@ -30,8 +31,8 @@ export default function Benefits() {
     <section id="benefits" className="relative scroll-mt-24 overflow-hidden bg-ink py-24 text-white sm:py-32">
       <div aria-hidden className="pointer-events-none absolute inset-0">
         <div className="bg-grid-dark absolute inset-0 [mask-image:radial-gradient(70%_60%_at_50%_40%,black,transparent)]" />
-        <div className="absolute -left-32 top-0 size-[500px] rounded-full bg-[radial-gradient(circle,rgb(232_85_31/0.22),transparent_65%)] blur-3xl" />
-        <div className="absolute -right-24 bottom-0 size-[420px] rounded-full bg-[radial-gradient(circle,rgb(255_178_94/0.14),transparent_65%)] blur-3xl" />
+        <div className="absolute -left-32 top-0 size-[500px] rounded-full bg-[radial-gradient(circle,rgb(8_97_242/0.22),transparent_65%)] blur-3xl" />
+        <div className="absolute -right-24 bottom-0 size-[420px] rounded-full bg-[radial-gradient(circle,rgb(77_155_255/0.14),transparent_65%)] blur-3xl" />
       </div>
 
       <div className="relative mx-auto grid max-w-7xl items-center gap-16 px-5 sm:px-8 lg:grid-cols-2">
@@ -40,7 +41,7 @@ export default function Benefits() {
           <div className="relative">
             <div className="overflow-hidden rounded-[2.5rem] border border-white/10 shadow-lift">
               <img
-                src="/images/lifestyle-room.png"
+                src={asset("/images/lifestyle-room.png")}
                 alt="Sunlit modern living room with an SRS air purifier by the wall"
                 loading="lazy"
                 className="aspect-[4/3.2] w-full object-cover"

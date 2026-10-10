@@ -16,8 +16,8 @@ export default function CTA() {
             {/* Ambient */}
             <div aria-hidden className="pointer-events-none absolute inset-0">
               <div className="bg-grid-dark absolute inset-0 opacity-60 [mask-image:radial-gradient(70%_80%_at_50%_50%,black,transparent)]" />
-              <div className="absolute -left-24 -top-24 size-96 rounded-full bg-[radial-gradient(circle,rgb(232_85_31/0.35),transparent_65%)] blur-3xl" />
-              <div className="absolute -bottom-28 -right-16 size-96 rounded-full bg-[radial-gradient(circle,rgb(255_178_94/0.25),transparent_65%)] blur-3xl" />
+              <div className="absolute -left-24 -top-24 size-96 rounded-full bg-[radial-gradient(circle,rgb(8_97_242/0.35),transparent_65%)] blur-3xl" />
+              <div className="absolute -bottom-28 -right-16 size-96 rounded-full bg-[radial-gradient(circle,rgb(77_155_255/0.25),transparent_65%)] blur-3xl" />
               <div className="absolute left-1/2 top-1/2 size-[560px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/[0.07]" />
               <div className="absolute left-1/2 top-1/2 size-[840px] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/[0.05]" />
             </div>
@@ -26,7 +26,7 @@ export default function CTA() {
               <Reveal>
                 <h2 className="mx-auto max-w-3xl font-display text-4xl font-semibold leading-[1.05] tracking-[-0.03em] sm:text-6xl">
                   Your home deserves{" "}
-                  <span className="font-accent font-normal italic text-transparent [background:linear-gradient(100deg,#ffb25e,#e8551f)] bg-clip-text">
+                  <span className="font-accent font-normal italic text-transparent [background:linear-gradient(100deg,#4D9BFF,#0861F2)] bg-clip-text">
                     better.
                   </span>
                 </h2>
@@ -42,7 +42,7 @@ export default function CTA() {
                   <Magnet>
                     <a
                       href="#showcase"
-                      className="group relative inline-flex items-center gap-2.5 overflow-hidden rounded-full bg-gradient-to-r from-ember to-[#f0701f] px-9 py-4.5 text-base font-semibold text-white shadow-ember transition-transform duration-300 hover:-translate-y-0.5"
+                      className="group relative inline-flex items-center gap-2.5 overflow-hidden rounded-full bg-gradient-to-r from-ember to-[#0650C4] px-9 py-4.5 text-base font-semibold text-white shadow-ember transition-transform duration-300 hover:-translate-y-0.5"
                     >
                       <span className="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-white/25 to-transparent transition-transform duration-700 group-hover:translate-x-full" />
                       <span className="relative">Shop the collection</span>
@@ -54,7 +54,7 @@ export default function CTA() {
                     className="group inline-flex items-center gap-2.5 rounded-full border border-white/20 bg-white/[0.06] px-8 py-4.5 text-base font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:border-white/40 hover:bg-white/10"
                   >
                     <Gift className="size-4.5 text-apricot transition-transform duration-300 group-hover:-rotate-12" />
-                    Refer &amp; earn $25
+                    Refer &amp; earn ₹25
                   </a>
                 </div>
               </Reveal>

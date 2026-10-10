@@ -39,7 +39,7 @@ export default function Features() {
           {/* WhisperCore — wide tile */}
           <Reveal className="md:col-span-2">
             <div className="group relative h-full overflow-hidden rounded-[2rem] border border-ink/[0.07] bg-white p-8 shadow-soft transition-shadow duration-500 hover:shadow-lift sm:p-10">
-              <div aria-hidden className="absolute -right-24 -top-24 size-64 rounded-full bg-[radial-gradient(circle,rgb(232_85_31/0.12),transparent_65%)] blur-2xl transition-transform duration-700 group-hover:scale-125" />
+              <div aria-hidden className="absolute -right-24 -top-24 size-64 rounded-full bg-[radial-gradient(circle,rgb(8_97_242/0.12),transparent_65%)] blur-2xl transition-transform duration-700 group-hover:scale-125" />
               <div className="relative flex flex-wrap items-start justify-between gap-8">
             <div className="max-w-sm">
               <span className="grid size-12 place-items-center rounded-2xl bg-blush text-ember">
@@ -75,7 +75,7 @@ export default function Features() {
           {/* Warranty badge tile */}
           <Reveal delay={0.1}>
             <div className="group relative flex h-full flex-col justify-between overflow-hidden rounded-[2rem] border border-ink/[0.07] bg-ink p-8 shadow-soft transition-shadow duration-500 hover:shadow-lift sm:p-10">
-              <div aria-hidden className="absolute -bottom-20 -right-20 size-56 rounded-full bg-[radial-gradient(circle,rgb(232_85_31/0.35),transparent_65%)] blur-2xl" />
+              <div aria-hidden className="absolute -bottom-20 -right-20 size-56 rounded-full bg-[radial-gradient(circle,rgb(8_97_242/0.35),transparent_65%)] blur-2xl" />
               <div className="relative mx-auto grid size-36 place-items-center">
                 <svg viewBox="0 0 100 100" className="absolute inset-0 spin-badge" aria-hidden>
                   <defs>
@@ -100,7 +100,7 @@ export default function Features() {
           {/* App tile */}
           <Reveal>
             <div className="group relative h-full overflow-hidden rounded-[2rem] border border-ink/[0.07] bg-white p-8 shadow-soft transition-shadow duration-500 hover:shadow-lift sm:p-10">
-              <span className="grid size-12 place-items-center rounded-2xl bg-[#e8f0fe] text-[#2f6fed]">
+              <span className="grid size-12 place-items-center rounded-2xl bg-[#E6F0FE] text-[#0861F2]">
                 <Smartphone className="size-6" />
               </span>
               <h3 className="mt-6 font-display text-2xl font-semibold tracking-tight text-ink">Smart Monitoring</h3>
@@ -114,7 +114,7 @@ export default function Features() {
                   <p className="text-[10px] font-semibold uppercase tracking-[0.18em] text-white/50">Digital RO · Kitchen</p>
                   <div className="mt-3 flex items-center justify-between">
                     <span className="font-display text-3xl font-bold">Auto</span>
-                    <span className="rounded-full bg-leaf/20 px-2.5 py-1 text-[10px] font-bold text-[#7fe0b5]">AIR EXCELLENT</span>
+                    <span className="rounded-full bg-white/15 px-2.5 py-1 text-[10px] font-bold text-[#7FB2FF]">AIR EXCELLENT</span>
                   </div>
                   <div className="mt-4 space-y-2">
                     {[["Quiet mode", true], ["Night schedule", true], ["Boost", false]].map(([label, on]) => (
@@ -136,7 +136,7 @@ export default function Features() {
             <div className="group relative h-full overflow-hidden rounded-[2rem] border border-ink/[0.07] bg-gradient-to-br from-white to-blush/50 p-8 shadow-soft transition-shadow duration-500 hover:shadow-lift sm:p-10">
               <div className="flex flex-wrap items-start justify-between gap-10">
                 <div className="max-w-sm">
-                  <span className="grid size-12 place-items-center rounded-2xl bg-[#e7f5ee] text-leaf">
+                  <span className="grid size-12 place-items-center rounded-2xl bg-[#E6F0FE] text-ember">
                     <BatteryCharging className="size-6" />
                   </span>
                   <h3 className="mt-6 font-display text-2xl font-semibold tracking-tight text-ink">
@@ -146,7 +146,7 @@ export default function Features() {
                     Smart-load sensors and efficient motors reduce power consumption —
                     saving you money on electricity bills.
                   </p>
-                  <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-semibold text-leaf shadow-soft">
+                  <div className="mt-6 inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-xs font-semibold text-ember shadow-soft">
                     <Sparkles className="size-3.5" /> Trusted by 10,000+ homes
                   </div>
                 </div>
