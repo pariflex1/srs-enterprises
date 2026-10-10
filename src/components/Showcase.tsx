@@ -3,6 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { ArrowRight, Check, Plus, Star } from "lucide-react";
 import { EASE, Reveal, SectionHeading } from "./motion-primitives";
 import { cn } from "../utils/cn";
+import { asset } from "../utils/asset";
 
 type Category = "All" | "Water Purifier" | "RO System" | "Appliance" | "Solar" | "Kitchen";
 
@@ -27,7 +28,7 @@ const PRODUCTS: Product[] = [
     rating: 4.8,
     reviews: "1,240",
     tag: "Popular",
-    img: "/images/Products/Water Purifier.png",
+    img: asset("/images/Products/Water Purifier.png"),
     alt: "Water Purifier",
   },
   {
@@ -37,7 +38,7 @@ const PRODUCTS: Product[] = [
     rating: 4.9,
     reviews: "890",
     tag: "Premium",
-    img: "/images/Products/Kangen Alkaline Water Ionizer.png",
+    img: asset("/images/Products/Kangen Alkaline Water Ionizer.png"),
     alt: "Kangen Alkaline Water Ionizer",
   },
   {
@@ -46,7 +47,7 @@ const PRODUCTS: Product[] = [
     category: "Water Purifier",
     rating: 4.7,
     reviews: "654",
-    img: "/images/Products/Ionizer.png",
+    img: asset("/images/Products/Ionizer.png"),
     alt: "Ionizer",
   },
   {
@@ -55,7 +56,7 @@ const PRODUCTS: Product[] = [
     category: "Water Purifier",
     rating: 4.6,
     reviews: "780",
-    img: "/images/Products/Water Dispenser.png",
+    img: asset("/images/Products/Water Dispenser.png"),
     alt: "Water Dispenser",
   },
   {
@@ -64,7 +65,7 @@ const PRODUCTS: Product[] = [
     category: "Water Purifier",
     rating: 4.5,
     reviews: "432",
-    img: "/images/Products/Water Conditioner.png",
+    img: asset("/images/Products/Water Conditioner.png"),
     alt: "Water Conditioner",
   },
   {
@@ -74,7 +75,7 @@ const PRODUCTS: Product[] = [
     rating: 4.8,
     reviews: "1,100",
     tag: "Best seller",
-    img: "/images/Products/Digital RO.png",
+    img: asset("/images/Products/Digital RO.png"),
     alt: "Digital RO System",
   },
   {
@@ -83,7 +84,7 @@ const PRODUCTS: Product[] = [
     category: "RO System",
     rating: 4.7,
     reviews: "876",
-    img: "/images/Products/Aqua Addition RO Black.png",
+    img: asset("/images/Products/Aqua Addition RO Black.png"),
     alt: "Aqua Addition RO Black",
   },
   {
@@ -92,7 +93,7 @@ const PRODUCTS: Product[] = [
     category: "RO System",
     rating: 4.7,
     reviews: "876",
-    img: "/images/Products/Aqua Addition RO White.png",
+    img: asset("/images/Products/Aqua Addition RO White.png"),
     alt: "Aqua Addition RO White",
   },
   {
@@ -102,7 +103,7 @@ const PRODUCTS: Product[] = [
     rating: 4.9,
     reviews: "320",
     tag: "Commercial",
-    img: "/images/Products/Commercial Reverse Osmosis System.png",
+    img: asset("/images/Products/Commercial Reverse Osmosis System.png"),
     alt: "Commercial Reverse Osmosis System",
   },
   {
@@ -111,7 +112,7 @@ const PRODUCTS: Product[] = [
     category: "RO System",
     rating: 4.6,
     reviews: "210",
-    img: "/images/Products/50 LPH Water Purifier.png",
+    img: asset("/images/Products/50 LPH Water Purifier.png"),
     alt: "50 LPH Water Purifier",
   },
   {
@@ -120,7 +121,7 @@ const PRODUCTS: Product[] = [
     category: "RO System",
     rating: 4.5,
     reviews: "180",
-    img: "/images/Products/150 LPH Cooler.png",
+    img: asset("/images/Products/150 LPH Cooler.png"),
     alt: "150 LPH Cooler",
   },
   {
@@ -130,7 +131,7 @@ const PRODUCTS: Product[] = [
     rating: 4.8,
     reviews: "2,340",
     tag: "New",
-    img: "/images/Products/Smart LED TV.png",
+    img: asset("/images/Products/Smart LED TV.png"),
     alt: "Smart LED TV",
   },
   {
@@ -139,7 +140,7 @@ const PRODUCTS: Product[] = [
     category: "Appliance",
     rating: 4.7,
     reviews: "1,560",
-    img: "/images/Products/Washing Machine.png",
+    img: asset("/images/Products/Washing Machine.png"),
     alt: "Washing Machine",
   },
   {
@@ -148,7 +149,7 @@ const PRODUCTS: Product[] = [
     category: "Appliance",
     rating: 4.6,
     reviews: "980",
-    img: "/images/Products/Geyser.png",
+    img: asset("/images/Products/Geyser.png"),
     alt: "Geyser",
   },
   {
@@ -157,7 +158,7 @@ const PRODUCTS: Product[] = [
     category: "Kitchen",
     rating: 4.5,
     reviews: "760",
-    img: "/images/Products/Mixer.png",
+    img: asset("/images/Products/Mixer.png"),
     alt: "Mixer",
   },
   {
@@ -167,7 +168,7 @@ const PRODUCTS: Product[] = [
     rating: 4.9,
     reviews: "420",
     tag: "Eco",
-    img: "/images/Products/Solar System.png",
+    img: asset("/images/Products/Solar System.png"),
     alt: "Solar System",
   },
   {
@@ -176,7 +177,7 @@ const PRODUCTS: Product[] = [
     category: "Water Purifier",
     rating: 4.4,
     reviews: "310",
-    img: "/images/Products/Indexn.png",
+    img: asset("/images/Products/Indexn.png"),
     alt: "Indexn Water System",
   },
 ];

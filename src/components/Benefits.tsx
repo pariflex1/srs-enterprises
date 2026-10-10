@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { ArrowRight, Leaf, RefreshCcw, ShieldCheck, Sparkles, Timer } from "lucide-react";
 import { Counter, EASE, Eyebrow, Reveal, Stagger, staggerChild } from "./motion-primitives";
+import { asset } from "../utils/asset";
 
 const BENEFITS = [
   {
@@ -40,7 +41,7 @@ export default function Benefits() {
           <div className="relative">
             <div className="overflow-hidden rounded-[2.5rem] border border-white/10 shadow-lift">
               <img
-                src="/images/lifestyle-room.png"
+                src={asset("/images/lifestyle-room.png")}
                 alt="Sunlit modern living room with an SRS air purifier by the wall"
                 loading="lazy"
                 className="aspect-[4/3.2] w-full object-cover"

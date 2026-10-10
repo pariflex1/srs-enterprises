@@ -10,6 +10,7 @@ import {
 import { ArrowRight, Gift, Menu, X } from "lucide-react";
 import { cn } from "../utils/cn";
 import { EASE } from "./motion-primitives";
+import { asset } from "../utils/asset";
 
 const LINKS = [
   { label: "Products", href: "/#showcase" },
@@ -24,7 +25,7 @@ export function Logo({ dark = false }: { dark?: boolean }) {
   return (
     <Link to="/" className="group flex items-center" aria-label="SRS Enterprises home">
       <img
-        src={dark ? "/images/Logos/srs-logo-white.png" : "/images/Logos/srs-logo.png"}
+        src={dark ? asset("/images/Logos/srs-logo-white.png") : asset("/images/Logos/srs-logo.png")}
         alt="SRS Enterprises"
         width={512}
         height={164}
@@ -39,8 +40,13 @@ export default function Navbar() {
   const { pathname } = useLocation();
   // Section links point at "/#id" so they work from any route. On the home
   // page use the plain "#id" anchor so the browser scrolls in place.
-  const hrefFor = (href: string) =>
-    href.startsWith("/#") && pathname === "/" ? href.slice(1) : href;
+  const hrefFor = (href: string) => {
+    const base = import.meta.env.BASE_URL;
+    if (href.startsWith("/#")) {
+      return pathname === "/" ? href.slice(1) : base + href.slice(1);
+    }
+    return base + href.slice(1);
+  };
   const [open, setOpen] = useState(false);
   const { scrollY, scrollYProgress } = useScroll();
   const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 26 });

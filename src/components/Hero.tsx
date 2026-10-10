@@ -1,6 +1,7 @@
 import { motion, useMotionValue, useReducedMotion, useSpring } from "framer-motion";
 import { ArrowRight, AudioLines, Award, Gift, Star, Wind } from "lucide-react";
 import { EASE, Magnet } from "./motion-primitives";
+import { asset } from "../utils/asset";
 
 const container = {
   hidden: {},
@@ -175,7 +176,7 @@ export default function Hero() {
 
             <div className="relative overflow-hidden rounded-[2.75rem] border border-ink/[0.07] shadow-lift">
               <img
-                src="/images/Products/Digital RO.png"
+                src={asset("/images/Products/Digital RO.png")}
                 alt="Digital RO Water Purification System"
                 className="aspect-square w-full bg-cream object-contain p-8"
                 loading="eager"
