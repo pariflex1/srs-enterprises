@@ -18,8 +18,8 @@ const STEPS = [
   {
     icon: Wallet,
     step: "03",
-    title: "You earn $25",
-    copy: "Credit lands the day their order ships. No caps, no expiry — refer ten friends, earn $250.",
+    title: "You earn ₹25",
+    copy: "Credit lands the day their order ships. No caps, no expiry — refer ten friends, earn ₹250.",
   },
 ];
 
@@ -27,7 +27,7 @@ export default function Referral() {
   return (
     <section id="referral" className="relative scroll-mt-24 overflow-hidden py-24 sm:py-32">
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute left-[-10%] top-10 size-[480px] rounded-full bg-[radial-gradient(circle,rgb(232_85_31/0.1),transparent_65%)] blur-3xl" />
+        <div className="absolute left-[-10%] top-10 size-[480px] rounded-full bg-[radial-gradient(circle,rgb(8_97_242/0.1),transparent_65%)] blur-3xl" />
       </div>
 
       <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
@@ -43,12 +43,12 @@ export default function Referral() {
               </span>
               <h2 className="mx-auto mt-6 max-w-2xl font-display text-4xl font-semibold leading-[1.06] tracking-[-0.03em] text-ink sm:text-5xl">
                 Give 20%.{" "}
-                <span className="font-accent font-normal italic text-ember">Get $25.</span>{" "}
+                <span className="font-accent font-normal italic text-ember">Get ₹25.</span>{" "}
                 Repeat forever.
               </h2>
               <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-smoke">
                 Great homes talk. When yours recommends SRS, everyone wins — our average
-                member earns <span className="font-semibold text-ink">$148 a year</span> in credits.
+                member earns <span className="font-semibold text-ink">₹148 a year</span> in credits.
               </p>
             </div>
 

@@ -18,7 +18,7 @@ const TESTIMONIALS = [
     name: "Daniel Kim",
     meta: "Commercial RO · Mumbai, IN",
     initials: "DK",
-    bg: "from-[#2f6fed] to-[#7db3ff]",
+    bg: "from-[#0861F2] to-[#4D9BFF]",
   },
   {
     quote:
@@ -26,7 +26,7 @@ const TESTIMONIALS = [
     name: "Priya Sharma",
     meta: "Water Purifier + Kitchen · Bangalore, IN",
     initials: "PS",
-    bg: "from-[#1e9e6a] to-[#7fd8ad]",
+    bg: "from-[#0A0A0A] to-[#6B7280]",
   },
   {
     quote:
@@ -34,7 +34,7 @@ const TESTIMONIALS = [
     name: "Tom Wheeler",
     meta: "Kangen Ionizer · Chennai, IN",
     initials: "TW",
-    bg: "from-[#7c4dff] to-[#c4a7ff]",
+    bg: "from-[#374151] to-[#9CA3AF]",
   },
   {
     quote:
@@ -42,7 +42,7 @@ const TESTIMONIALS = [
     name: "Elena Moreau",
     meta: "Solar System · Hyderabad, IN",
     initials: "EM",
-    bg: "from-[#d63384] to-[#ff9ec7]",
+    bg: "from-[#0650C4] to-[#0861F2]",
   },
   {
     quote:
@@ -50,7 +50,7 @@ const TESTIMONIALS = [
     name: "Jess & Aaron Cole",
     meta: "Referral members · Pune, IN",
     initials: "JC",
-    bg: "from-[#0e7490] to-[#6ee7d8]",
+    bg: "from-[#000000] to-[#4B5563]",
   },
 ];
 
@@ -97,7 +97,7 @@ export default function Testimonials() {
                   <p className="truncate text-sm font-bold text-ink">{t.name}</p>
                   <p className="truncate text-xs text-fog">{t.meta}</p>
                 </div>
-                <span className="ml-auto inline-flex items-center gap-1 rounded-full bg-[#e7f5ee] px-2.5 py-1 text-[10px] font-bold text-leaf">
+                <span className="ml-auto inline-flex items-center gap-1 rounded-full bg-[#E6F0FE] px-2.5 py-1 text-[10px] font-bold text-ember">
                   <BadgeCheck className="size-3" /> Verified
                 </span>
               </figcaption>

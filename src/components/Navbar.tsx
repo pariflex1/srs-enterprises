@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   motion,
   useScroll,
@@ -22,24 +22,25 @@ const LINKS = [
 
 export function Logo({ dark = false }: { dark?: boolean }) {
   return (
-    <Link to="/" className="group flex items-center gap-3" aria-label="SRS Enterprises home">
-      <span className="grid size-10 place-items-center rounded-xl bg-gradient-to-br from-ember to-apricot font-display text-lg font-bold text-white shadow-ember transition-transform duration-500 group-hover:rotate-[8deg]">
-        S
-      </span>
-      <span className="flex flex-col leading-none">
-        <span className={cn("font-display text-lg font-bold tracking-tight", dark ? "text-white" : "text-ink")}>
-          SRS
-        </span>
-        <span className={cn("text-[9px] font-semibold uppercase tracking-[0.32em]", dark ? "text-white/50" : "text-smoke")}>
-          Enterprises
-        </span>
-      </span>
+    <Link to="/" className="group flex items-center" aria-label="SRS Enterprises home">
+      <img
+        src={dark ? "/images/Logos/srs-logo-white.png" : "/images/Logos/srs-logo.png"}
+        alt="SRS Enterprises"
+        width={512}
+        height={164}
+        className="h-9 w-auto transition-transform duration-500 group-hover:scale-105 sm:h-11"
+      />
     </Link>
   );
 }
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const { pathname } = useLocation();
+  // Section links point at "/#id" so they work from any route. On the home
+  // page use the plain "#id" anchor so the browser scrolls in place.
+  const hrefFor = (href: string) =>
+    href.startsWith("/#") && pathname === "/" ? href.slice(1) : href;
   const [open, setOpen] = useState(false);
   const { scrollY, scrollYProgress } = useScroll();
   const progress = useSpring(scrollYProgress, { stiffness: 120, damping: 26 });
@@ -61,7 +62,7 @@ export default function Navbar() {
         className={cn(
           "fixed inset-x-0 top-0 z-[70] transition-all duration-500",
           scrolled
-            ? "border-b border-ink/[0.06] bg-porcelain shadow-[0_8px_32px_-16px_rgb(24_20_16/0.15)]"
+            ? "border-b border-ink/[0.06] bg-porcelain shadow-[0_8px_32px_-16px_rgb(0_0_0/0.15)]"
             : "bg-transparent"
         )}
       >
@@ -75,7 +76,7 @@ export default function Navbar() {
             {LINKS.map((l) => (
               <li key={l.label}>
                 <a
-                  href={l.href}
+                  href={hrefFor(l.href)}
                   className="group relative rounded-full px-4 py-2 text-sm font-medium text-smoke transition-colors duration-300 hover:text-ink"
                 >
                   {l.label}
@@ -91,7 +92,7 @@ export default function Navbar() {
               className="group hidden items-center gap-2 rounded-full border border-ember/25 bg-blush/60 px-4 py-2 text-sm font-semibold text-ember-deep transition-all duration-300 hover:border-ember/50 hover:bg-blush md:inline-flex"
             >
               <Gift className="size-4 transition-transform duration-300 group-hover:-rotate-12" />
-              Refer &amp; earn $25
+              Refer &amp; earn ₹25
               <span className="size-1.5 rounded-full bg-ember animate-pulse-dot" />
             </a>
             <a
@@ -130,7 +131,7 @@ export default function Navbar() {
                     transition={{ delay: 0.06 * i, duration: 0.4, ease: EASE }}
                   >
                     <a
-                      href={l.href}
+                      href={hrefFor(l.href)}
                       onClick={() => setOpen(false)}
                       className="flex items-center justify-between rounded-2xl px-4 py-3.5 font-display text-xl font-semibold text-ink transition-colors hover:bg-white"
                     >

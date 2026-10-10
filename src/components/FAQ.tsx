@@ -15,7 +15,7 @@ const FAQS = [
   },
   {
     q: "How does the referral program pay out?",
-    a: "Share your personal link; friends get 20% off plus free shipping. The day their order ships, $25 in credit lands in your SRS account. Credits never expire, stack with bundles, and there's no limit on how many friends you refer.",
+    a: "Share your personal link; friends get 20% off plus free shipping. The day their order ships, ₹25 in credit lands in your SRS account. Credits never expire, stack with bundles, and there's no limit on how many friends you refer.",
   },
   {
     q: "Can I pay monthly?",
@@ -27,7 +27,7 @@ const FAQS = [
   },
   {
     q: "What if I already own an older appliance?",
-    a: "Our trade-in program accepts appliances from any brand, working or not. You'll get instant credit — up to $120 — and we'll refurbish or responsibly recycle the old unit. Nothing goes to landfill.",
+    a: "Our trade-in program accepts appliances from any brand, working or not. You'll get instant credit — up to ₹120 — and we'll refurbish or responsibly recycle the old unit. Nothing goes to landfill.",
   },
 ];
 
@@ -97,7 +97,7 @@ export default function FAQ() {
               href="#top"
               className="group mt-8 inline-flex items-center gap-3 rounded-full border border-ink/10 bg-white px-6 py-3.5 text-sm font-semibold text-ink shadow-soft transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lift"
             >
-              <span className="relative grid size-9 place-items-center rounded-full bg-[#e7f5ee] text-leaf">
+              <span className="relative grid size-9 place-items-center rounded-full bg-[#E6F0FE] text-ember">
                 <MessageCircle className="size-4.5" />
                 <span className="absolute right-0 top-0 size-2.5 rounded-full border-2 border-white bg-leaf" />
               </span>

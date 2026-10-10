@@ -55,7 +55,7 @@ export default function Footer() {
   return (
     <footer className="relative overflow-hidden bg-ink pb-10 pt-20 text-white">
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute -top-32 left-1/3 size-96 rounded-full bg-[radial-gradient(circle,rgb(232_85_31/0.14),transparent_65%)] blur-3xl" />
+        <div className="absolute -top-32 left-1/3 size-96 rounded-full bg-[radial-gradient(circle,rgb(8_97_242/0.14),transparent_65%)] blur-3xl" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">

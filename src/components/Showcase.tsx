@@ -241,9 +241,9 @@ function ProductCard({ p, index }: { p: Product; index: number }) {
           <p className="font-display text-xl font-bold text-ink">
             {p.price ? (
               <>
-                ${p.price}
+                ₹{p.price}
                 {p.compareAt && (
-                  <span className="ml-2 text-sm font-medium text-fog line-through">${p.compareAt}</span>
+                  <span className="ml-2 text-sm font-medium text-fog line-through">₹{p.compareAt}</span>
                 )}
               </>
             ) : (
@@ -255,7 +255,7 @@ function ProductCard({ p, index }: { p: Product; index: number }) {
             className={cn(
               "inline-flex items-center gap-1.5 rounded-full px-4 py-2 text-xs font-bold transition-all duration-300",
               added
-                ? "bg-leaf/10 text-leaf"
+                ? "bg-leaf/10 text-ember"
                 : "bg-ink/[0.05] text-ink hover:bg-ink hover:text-white"
             )}
           >
@@ -280,7 +280,7 @@ export default function Showcase() {
   return (
     <section id="showcase" className="relative scroll-mt-24 py-24 sm:py-32">
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute right-[-15%] top-1/4 size-[560px] rounded-full bg-[radial-gradient(circle,rgb(255_178_94/0.14),transparent_65%)] blur-3xl" />
+        <div className="absolute right-[-15%] top-1/4 size-[560px] rounded-full bg-[radial-gradient(circle,rgb(77_155_255/0.14),transparent_65%)] blur-3xl" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">

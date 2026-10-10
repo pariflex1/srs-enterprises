@@ -62,7 +62,7 @@ export default function Pricing() {
   return (
     <section id="pricing" className="relative scroll-mt-24 py-24 sm:py-32">
       <div aria-hidden className="pointer-events-none absolute inset-0">
-        <div className="absolute left-1/2 top-1/3 size-[720px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgb(232_85_31/0.07),transparent_65%)] blur-3xl" />
+        <div className="absolute left-1/2 top-1/3 size-[720px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgb(8_97_242/0.07),transparent_65%)] blur-3xl" />
       </div>
 
       <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
@@ -91,7 +91,7 @@ export default function Pricing() {
             >
               {p.featured && (
                 <>
-                  <div aria-hidden className="absolute -right-20 -top-20 size-52 rounded-full bg-[radial-gradient(circle,rgb(232_85_31/0.4),transparent_65%)] blur-2xl" />
+                  <div aria-hidden className="absolute -right-20 -top-20 size-52 rounded-full bg-[radial-gradient(circle,rgb(8_97_242/0.4),transparent_65%)] blur-2xl" />
                   <span className="absolute -top-3.5 left-1/2 z-10 -translate-x-1/2 rounded-full bg-gradient-to-r from-ember to-apricot px-4 py-1.5 text-[10px] font-bold uppercase tracking-[0.16em] text-white shadow-ember">
                     Most popular
                   </span>
@@ -134,7 +134,7 @@ export default function Pricing() {
                   className={cn(
                     "group mt-8 flex w-full items-center justify-center gap-2 rounded-full py-4 text-sm font-bold transition-all duration-300",
                     p.featured
-                      ? "bg-gradient-to-r from-ember to-[#f0701f] text-white shadow-ember hover:-translate-y-0.5"
+                      ? "bg-gradient-to-r from-ember to-[#0650C4] text-white shadow-ember hover:-translate-y-0.5"
                       : "bg-ink text-white hover:-translate-y-0.5 hover:bg-ember"
                   )}
                 >

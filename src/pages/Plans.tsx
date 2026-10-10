@@ -33,7 +33,7 @@ const PRODUCT_CATEGORIES: ProductCategory[] = [
       "UV Water Purifiers",
       "Alkaline Water Systems",
     ],
-    color: "from-blue-500 to-cyan-500",
+    color: "from-[#0861F2] to-[#4D9BFF]",
   },
   {
     name: "Solar Solutions",
@@ -46,7 +46,7 @@ const PRODUCT_CATEGORIES: ProductCategory[] = [
       "Battery Backup Systems",
       "Complete Solar Installations",
     ],
-    color: "from-amber-500 to-orange-500",
+    color: "from-[#0A0A0A] to-[#4B5563]",
   },
   {
     name: "HVAC Systems",
@@ -59,7 +59,7 @@ const PRODUCT_CATEGORIES: ProductCategory[] = [
       "Ventilation Systems",
       "Installation & Maintenance",
     ],
-    color: "from-emerald-500 to-teal-500",
+    color: "from-[#4B5563] to-[#9CA3AF]",
   },
   {
     name: "Home Appliances",
@@ -72,7 +72,7 @@ const PRODUCT_CATEGORIES: ProductCategory[] = [
       "Kitchen Appliances",
       "Small Home Appliances",
     ],
-    color: "from-purple-500 to-pink-500",
+    color: "from-[#0650C4] to-[#0861F2]",
   },
 ];
 
@@ -161,7 +161,7 @@ export default function Plans() {
         {/* Hero Section */}
         <section className="relative overflow-hidden py-16 sm:py-24">
           <div aria-hidden className="pointer-events-none absolute inset-0">
-            <div className="absolute left-1/2 top-1/4 size-[800px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgb(232_85_31/0.12),transparent_70%)] blur-3xl" />
+            <div className="absolute left-1/2 top-1/4 size-[800px] -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgb(8_97_242/0.12),transparent_70%)] blur-3xl" />
           </div>
 
           <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
@@ -248,7 +248,7 @@ export default function Plans() {
         {/* Pricing Plans */}
         <section className="relative py-16 sm:py-24">
           <div aria-hidden className="pointer-events-none absolute inset-0">
-            <div className="absolute right-1/4 top-1/2 size-[600px] -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgb(232_85_31/0.08),transparent_65%)] blur-3xl" />
+            <div className="absolute right-1/4 top-1/2 size-[600px] -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgb(8_97_242/0.08),transparent_65%)] blur-3xl" />
           </div>
 
           <div className="relative mx-auto max-w-7xl px-5 sm:px-8">
@@ -278,7 +278,7 @@ export default function Plans() {
                 >
                   {plan.popular && (
                     <>
-                      <div aria-hidden className="absolute -right-20 -top-20 size-52 rounded-full bg-[radial-gradient(circle,rgb(232_85_31/0.4),transparent_65%)] blur-2xl" />
+                      <div aria-hidden className="absolute -right-20 -top-20 size-52 rounded-full bg-[radial-gradient(circle,rgb(8_97_242/0.4),transparent_65%)] blur-2xl" />
                       <span className="absolute -top-3.5 left-1/2 z-10 -translate-x-1/2 rounded-full bg-gradient-to-r from-ember to-apricot px-4 py-1.5 text-[10px] font-bold uppercase tracking-wider text-white shadow-ember">
                         Most Popular
                       </span>
@@ -320,7 +320,7 @@ export default function Plans() {
                       className={cn(
                         "group mt-8 flex w-full items-center justify-center gap-2 rounded-full py-4 text-sm font-bold transition-all duration-300",
                         plan.popular
-                          ? "bg-gradient-to-r from-ember to-[#f0701f] text-white shadow-ember hover:-translate-y-0.5"
+                          ? "bg-gradient-to-r from-ember to-[#0650C4] text-white shadow-ember hover:-translate-y-0.5"
                           : "bg-ink text-white hover:-translate-y-0.5 hover:bg-ember"
                       )}
                     >
@@ -374,7 +374,7 @@ export default function Plans() {
           <div className="mx-auto max-w-7xl px-5 sm:px-8">
             <Reveal>
               <div className="relative overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-ink via-ink to-ember/20 p-8 shadow-lift sm:p-12 lg:p-16">
-                <div aria-hidden className="absolute -right-32 -top-32 size-96 rounded-full bg-[radial-gradient(circle,rgb(232_85_31/0.3),transparent_65%)] blur-3xl" />
+                <div aria-hidden className="absolute -right-32 -top-32 size-96 rounded-full bg-[radial-gradient(circle,rgb(8_97_242/0.3),transparent_65%)] blur-3xl" />
 
                 <div className="relative grid gap-12 lg:grid-cols-2 lg:gap-16">
                   <div>
